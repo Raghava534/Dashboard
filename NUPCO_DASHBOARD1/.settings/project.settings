@@ -37,13 +37,13 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_STATCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_LOGCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -97,7 +97,7 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_DATABASE_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -109,19 +109,19 @@
         "show" : true,
         "field" : "CLOSED_LIST",
         "name" : "DB_TYPE",
-        "value" : "tJDBCOutput",
+        "value" : "tMSSqlOutput",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CLOSED_LIST",
         "name" : "DB_VERSION",
-        "value" : "ORACLE_12",
+        "value" : "JTDS",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "URL",
-        "value" : "\"\"",
+        "value" : "",
         "contextMode" : false
       }, {
         "show" : true,
@@ -132,31 +132,31 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "DRIVER_CLASS",
-        "value" : "\"\"",
+        "value" : "",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "HOST",
-        "value" : "\"\"",
+        "value" : "\"CHQDWH01W16.nupco.com\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "PORT",
-        "value" : "\"\"",
+        "value" : "\"1433\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "DBNAME",
-        "value" : "\"\"",
+        "value" : "\"MarketplaceDashboard_Stg\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "LOCAL_SERVICE_NAME",
-        "value" : "\"\"",
+        "value" : "\"MarketplaceDashboard_Stg\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -168,19 +168,19 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "SCHEMA_DB",
-        "value" : "\"\"",
+        "value" : "\"dbo\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "USER",
-        "value" : "\"\"",
+        "value" : "\"saranya\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "enc:system.encryption.key.v1:6kdhMTPhtJuIt6OFusjWXtoG0b0f8lXfAyIVv2DX",
+        "value" : "enc:system.encryption.key.v1:WFpFqdrPX2rz48heAy7fd5vMsj5+A1iyE7Z188ol5kzQsFhEaqZfCw==",
         "contextMode" : false
       }, {
         "show" : true,
@@ -192,7 +192,7 @@
         "show" : true,
         "field" : "DBTABLE",
         "name" : "TABLE_STATS",
-        "value" : "\"\"",
+        "value" : "\"job_log\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -228,7 +228,7 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "CATCH_REALTIME_STATS",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -240,13 +240,13 @@
         "show" : true,
         "field" : "TECHNICAL",
         "name" : "PROPERTY_TYPE:PROPERTY_TYPE",
-        "value" : "BUILT_IN",
+        "value" : "REPOSITORY",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TECHNICAL",
         "name" : "PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE",
-        "value" : "",
+        "value" : "_n08y8DHtEeukkodRqX6lIg",
         "contextMode" : false
       } ]
     }
