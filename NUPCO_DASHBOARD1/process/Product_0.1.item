@@ -56,14 +56,14 @@
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
     <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/NUPCO/Log&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_n08y8DHtEeukkodRqX6lIg"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wHKpB/PXvSngA5p5PdVf2GdY5SNHbZofJlfxUkDKTifRbGiXFrPfZA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YnFh8FzlYApBF/pGOnTtYMhwhsnsRFCxbJY6o7Stjdj+qO70rthZWQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;job_log&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
@@ -1337,13 +1337,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d76cf6d-8b16-44b8-92b9-19662e849ea0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U7cziwiJ4ZqRB0EuNpka8IMOCeN2KWNMbUviZ21VVyfAZ5O3o8kUDU32zAjwa2QcSFKrCVYWI6lj&#13;
-DrYAjYVYyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4ad37925-6bba-4e2a-a2fc-7c5b54522298"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>r1vQdF9eYwZraGZvQS6QtBlxcIgaNl/KCHB8QNa9qYfHb5dWWcp0hNsWM6wKZRVgYe9PirszGCXs&#13;
-NBHCEsz2yA==</DigestValue></Reference></SignedInfo><SignatureValue>aWFY2C1YGgmRvFXWyP5+u3bEoZBtCgIJeWeYS+5I4hOFzJwE/F/vArTUagOVx8sBEQNZ9nb45HZg&#13;
-/9o6MgUNpmk0oX6XyFSV7FR/iC4+gKNoo9twtKQAddp4X0Mrx9qYgCyfG9NWxfxh6IoUS514rv03&#13;
-CTDy74+12eTjofZcAutvuvft0Bk/Zm+aaOZetIF6QEq/2O3FcULSbKEOIuh64MnGrYeAzSTNVVXh&#13;
-n0AyAMwfNZXt+XvbeqQ9/PkgfYfPjkxEmTSNgNhbZVaPtr78N2LeZBL1+3YJGPuEiA4liAfoq/xm&#13;
-6YAtqUc/xJSigxirsndE+vhIHGYwuc8BlKHTyw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d9a6ea01-735b-45a3-999a-ca44323f0dcd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JdSCruRaBGMwiG2EJIXFbWTk+XNluKa8kVp2xvxoOBHNmySAmAdIZac76IQjiHjfgfcssEOqWuNL&#13;
+GjTFupZaRw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1681bc04-6e2e-4304-80da-09ebfde49a88"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>05CvD3ru0IkSsATiFr/TqtPI2W8uFxYsJNJpNYzBGUkXhLhwMytFQBuJpVW/bnUxBh8Duic7HlZN&#13;
+yVUSjC9LNg==</DigestValue></Reference></SignedInfo><SignatureValue>Hufs3ekjJwB8eMxqXL4vMsjZIcZ5G7vzWsTAwwhAD1pHDSsv1FWMWxVzDPevm6rSfBFeZZv7ZcrR&#13;
+OEyJfoSLfcRKw85+PYVW1PoXq8Iyxwyostxleb3W4OeJnQPg7em8swmp1wrMcszJHNCpdmyjq8/D&#13;
+6wyJewMEOypKL1hu3ihwop9d6u3vSJvYZmUiNl4Duf+MV6gYT74Vmgo3Ijaz2G9BubVBxVnkdil/&#13;
+tZ8OQUpAZ5+/lBInMPFJCRC+lQERHhvw6bPpuxuTxW2MAJWn4Iq1ITy88FSPLQLErFQOXLnQaPgH&#13;
+iGkHXzYq04+nZzRk4TmpMwknmfZ5oU/daDC82w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1365,4 +1365,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4ad37925-6bba-4e2a-a2fc-7c5b54522298" Target="#_0d76cf6d-8b16-44b8-92b9-19662e849ea0"><Timestamp>2020-11-30 06:58:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1681bc04-6e2e-4304-80da-09ebfde49a88" Target="#_d9a6ea01-735b-45a3-999a-ca44323f0dcd"><Timestamp>2020-11-30 09:50:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
