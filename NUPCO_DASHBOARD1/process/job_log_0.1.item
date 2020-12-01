@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0jlGoVLHap9agp/GR0dN1KzIM3F1KNlShLQiVUuX"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hdG7J+DUoyBCG1IV/7mTHhlxvrxjztjIFJqwRz/i"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -63,27 +63,27 @@
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" show="false" value="_LuwDgCTXEeuECcsnxqO8zw"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_LuwDgCTXEeuECcsnxqO8zw"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tMSSqlOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="JTDS"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="_n08y8DHtEeukkodRqX6lIg"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_n08y8DHtEeukkodRqX6lIg"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="JTDS"/>
     <elementParameter field="TEXT" name="URL" show="false" value=""/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;CHQDWH01W16.nupco.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;CHQDWH01W16.nupco.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;MarketplaceDashboard_Stg&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MarketplaceDashboard_Stg&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;nupco_stg&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UzXUekRoi3BLdoWwz1Yrj/9cFaF+qpQfPgWmxsQgZmeE+S98PzQDXQ=="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OC+NARrRiQpNt0TnUfTQBhOHQEl0eevOT0ufik7WGVbXYkr2VpVcBA=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;Staus_log&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowmeter&quot;"/>
     <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
@@ -129,54 +129,6 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/NUPCO/Stat_Log/Stat_Log.txt&quot;"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputDelimited_1">
-      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
@@ -189,7 +141,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WuMALkDC2szk4Qmu72bLILqzUHNnzCeR115jIdQA5pKCY4gUvC72uA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:P+g4umHoYG2AlBq8IyRtNIxhvs/TM7LbhU4Vq0jV69m4JSfCqEeXnQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -203,10 +155,86 @@
     <elementParameter field="TEXT" name="LABEL" value="Staging_DB_Connection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tFileOutputDelimited_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
+  <node componentName="tCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MSSQL"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_TABLE"/>
+    <elementParameter field="CHECK" name="CASESENSITIVE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9/eQIjK9gdGwEasxzDWrkC5hqU1aE7R4q8IgfxNo"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_ACCESS" show="false" value="&quot;C:/Users/bshanmugam/Newworkspace/in.mdb&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_AS400_VERSION" show="false" value="jt400-9.8.jar"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_FIREBIRD" show="false" value="&quot;C:/Users/bshanmugam/Newworkspace/in.FDB&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" show="false" value="HSQLDB_SERVER"/>
+    <elementParameter field="CHECK" name="TLS" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH_HSQL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_HSQL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INFORMIX" show="false" value=""/>
+    <elementParameter field="TEXT" name="DBSERVER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="TEXT" name="DBFILE_INTERBASE" show="false" value="&quot;C:/Users/bshanmugam/Newworkspace/in.gdb&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="FRAMEWORK_TYPE" show="false" value="EMBEDED"/>
+    <elementParameter field="CHECK" name="CONNECTION_FLAG" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DBNAME_JAVADB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DIRECTORY" name="DBROOTPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="MSSQL_DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="CHECK" name="TEMPTABLE" show="false" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_MYSQL_VERSION" show="false" value="MYSQL_8"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_NETEZZA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_ORACLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_18"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_POSTGRE_VERSION" show="false" value="V9_X"/>
+    <elementParameter field="CHECK" name="UNLOGGED" show="false" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_SQLITE" show="false" value="&quot;C:/Users/bshanmugam/Newworkspace/talend.db&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_SYBASE_VERSION" show="false" value="SYBSEIQ_16"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="TEXT" name="ODBCNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="CHECK" name="VERTICA_USE_CASCADE" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERTICA_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_EXASOL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_REDSHIFT" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SNOWFLAKE" show="false" value=""/>
+    <elementParameter field="TEXT" name="ACCOUNT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value=""/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" show="false" value="SET"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="VERTICA_CREATE_PROJECTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCreateTable_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tStatCatcher_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -220,13 +248,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e0da981a-63b6-470b-8057-de268527a75d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yknBJq+IQHNOOU3aQDpahYMHxIZlNQ3F2WpsscRAk1vI8H7GpMQ3i88fCJ6OAbFy4Gd6X7X3hAwC&#13;
-jH6XZN9ADQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4cdeb6c6-8940-4359-81b1-31b9aadd027c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xT/M0CqxNGLe0pQQX6VG+b/9IYgyPYLkR6g+qaiOh9N12lBZXQSiJ53BIvDO7qlf1FwJp9aqS2rx&#13;
-lX7/duQJRw==</DigestValue></Reference></SignedInfo><SignatureValue>gAi1YQwCpMJiKM4wTtC6MBpLRQqOzu2sZwlAjHzXDx5YzU1OYqi/p9gwVlaTgP4cGoPBvbtK+/2B&#13;
-nJZkGQQkomanRcKwKuqE82KpqweSPokOxaT2OAW+sIxYORJyyPWwhLEzib4KcFZFpQf/QRG/ehrr&#13;
-cyTgLxxF7njAu9DEllZ4Zvk0ZiLuu/cUX7EUomE0lHnC9LJb1AWt65xEk1FGFe4NGmDV3b6CIhy1&#13;
-YUycVytl3VPHjCy2Kr/8M1jeiCmu49jMovlngvhD5+Mrg4WsRmy7C0+wEWXZXkvUE9YMTkhrr5kg&#13;
-4mirJAyzSWWdPwrQV3SC8yCyFDoCQOZuKeQxOQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9a2827ac-b5e1-4655-a30b-130839f9e62c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yUL25f/yWYVYBkLDZvbMq7jw6b9FKTfTYFshYzi2ADsupgZyz5d/ByqT7dA3d1+MriZmWoyMhOvg&#13;
+1zF5XSb+Qw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6257cc4c-431f-425c-a8bd-82625c79053d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>72N9d3xbAOdLopEpNGkEJoht2E1AT93VA/u7zssAeZKq0MJz8YEa1O4zLOD6/akXPwxrT5E2+8wi&#13;
+5Uc9HJWz2A==</DigestValue></Reference></SignedInfo><SignatureValue>jIg2y1a15cLRQv3tzR/rnYU9nn72LYm524wiWT71gLiCgabhxvbL0Qz0k3i1KXLw1iyQuVdHw4ic&#13;
+aHWF1GRlaVUfNvHyFxlqaw4Mzwqph8haPKR74+1LrlumpGESPwnKx2Ya0DcKhmZ9kQzpnd2g1Cd9&#13;
+iJ5o+JnsGZq05udGOwhiFBQ6D4NZb3AVqdeAI/oxO7AECbyYqSCiJlPp51vCLzP9o9QOaSqx+n+T&#13;
+Yj/jW9jXpSckJPub39vrtPN/pQAphglMdP1HWec+QoYbD6scqH2JBFqwRYV70qT2NYMKGYhAHQVv&#13;
+FqiqoLqeDLEEM9CTCQlDpWSIBPU/HNCZahjkOA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -248,4 +281,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4cdeb6c6-8940-4359-81b1-31b9aadd027c" Target="#_e0da981a-63b6-470b-8057-de268527a75d"><Timestamp>2020-11-30 13:31:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6257cc4c-431f-425c-a8bd-82625c79053d" Target="#_9a2827ac-b5e1-4655-a30b-130839f9e62c"><Timestamp>2020-12-01 09:51:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
