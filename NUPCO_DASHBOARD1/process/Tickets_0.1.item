@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:697EXOp+J7go1BC3DoRT19Mwy7n05F654yf6tVkj"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:v4t1OFfXkVAP14PAopaTwQNKCpMlWrcCyTVB/A/m"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B+W0CeXwE3pn49qwmdI2h9eretVQiCpqFxwGwTzUpN5zMnlLCmxAOw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7ksQblrRpb8FsHq2/D/DnNkZFP1/+GhyCzB6yeKcif3EDK4miQELGA=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6REaOjEcN9JHuGMRgRD9PIUlR1z/umw6x1HFJnQszN+JYQ0iz43KLQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:so3OXXYzPq9he0VxYjBEBOhkVerqFgh6jfya1LXq5aW4zsK1jHURlw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -268,16 +268,20 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Tickets" name="Tickets">
+      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="TicketID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="User" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="UserType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -292,37 +296,21 @@
       <column comment="" key="false" length="100" name="Website" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="Customer" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Tickets" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.PK " name="PK" nullable="true" type="id_Long"/>
         <mapperTableEntries expression="row1.Ticket_ID " name="TicketID" type="id_Integer"/>
         <mapperTableEntries expression="row1.User" name="User" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UserType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Creation_Time " name="SourceCreatedDate" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.Status" name="Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Modified_Time " name="SourceModifiedDate" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.Priority" name="priority" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Category" name="Category" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Subject" name="Subject" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Website" name="Website" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Customer" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="" name="PORelatedtoTicket" nullable="true" type="id_Long"/>
-        <mapperTableEntries expression="row1.Creation_Time " name="SourceCreatedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.Modified_Time " name="SourceModifiedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.PK " name="PK" nullable="true" type="id_Long"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="PK" nullable="true" type="id_Long"/>
@@ -351,7 +339,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:c/CnrqvNy3Su4iWApKkcero5rF/TUBJ/ktazFGX8o4ympEpZZemX4A=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0TlPZ6p6CeMxUoJftTLeKwLCmFj1EWIUhUY9IGqFZTcOa7GXvV1mjw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Tickets&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -375,6 +363,11 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TicketID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -385,12 +378,17 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UserType"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceCreatedDate"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceModifiedDate"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -415,31 +413,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Customer"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PORelatedtoTicket"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SourceCreatedDate"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SourceModifiedDate"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -449,16 +422,20 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Tickets" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="TicketID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="User" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="UserType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -473,31 +450,22 @@
       <column comment="" key="false" length="100" name="Website" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="Customer" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="Tickets" name="REJECT">
+      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="TicketID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="User" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="UserType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -512,19 +480,6 @@
       <column comment="" key="false" length="100" name="Website" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="Customer" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -541,7 +496,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KBo1kF2dHSpSIoDxpdxk0eRbemOcNjEpfhBOMr/5"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nNFHZDeIHKZMO3Vp2HNDW++uGkLsJMHtJMeYJ0vU"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -602,7 +557,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xlJsFdINgdU09lftXbG2iEzV6aZGZasLe+sbJXITrgboqe2ObJpWbw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:I+Hlrgos6wdCRgZ+FBzvPxG/v90QdWufjwdhTjvnIizuWzT/9PLRXw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -639,7 +594,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+kOoxMzspOgXLYPtLRM0NGnOEh2jBZl9BMIAzCRq+Idl6DhVQqtVVg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ylUPqeG44Qt3pJDobygTquWsytwVFStJSnphgbPUaFgmVgXB16Friw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Tickets&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -805,7 +760,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jkaku/PzKYw2Lfwf92+Fki6op2MnaETyYFqZTkCGr1dmSmzp36NSaQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:syeyWpY2XzxHjC2MhSOUFXNX7a6Ge/HlcPnCXBywj3RinDX809TCag=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CSTickets&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1101,13 +1056,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0b1f9be6-46c8-44ee-8654-5b5206926f93"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vU66HutNxEDV+h5VOc4vRmqqAYhY0CPtVNQNN4uJ23J3mXpCCmoMCYqA7On48AhLDPKmjB+jV26g&#13;
-cRWK8NZbyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_70ef7007-6ced-4629-9587-d8a61ae3c679"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EmKvTalQemJJJSRzfIJDRDxk4jiuPaNpbhiEHxBY4Dy0vpcZ949gT6jMkSQWV87XWbL0ad+EbLYu&#13;
-MCFg/uU/yA==</DigestValue></Reference></SignedInfo><SignatureValue>lIio80Js0ngD8pDV9NpW8T6ikVdPK+l/6zM+ZTXaEydpmeGKYfaO/e5+iLsKuw7g4DN3lohHS4nX&#13;
-jwvv3jX+49Fjv/g4CZBIFrrVbmX52gORZ2w9JAMxRErrRUgzRZWFU1q6c0ElekAjcrmmhpMo2imY&#13;
-kkWhOh5wdvh9MthJ+5OqPLIbiKWgj9Vqluf7wWRePVgEwjvJf50i++oQLVQg4y0OquRNx7I9f7nz&#13;
-KODa3HnCg5eUVHtzJgqxhaUQofTBl2ZVAbPFAZ3CieZToWwJusPZrdrgZ9403A9fDTOdaZWukhdr&#13;
-vLRnNM4fBtk2T56zXmrRNCq7FWA35HQjb0xTSg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1db98c6f-afea-4aa1-8102-2c7b84edafc1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wL6PWwS3NzFaOg+jFnXi0MX+vxGAu3R6s7RGAIKNNt4caqT8KbLO2zbCVJ/QZMoVpBADlaf81qZN&#13;
+nEpfvtn6Og==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e3c32bd2-123f-4225-b920-386c8dd1ae51"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NeI5KxeIrqflBc13ShBG3yRBABZZC7LbbIyofXw68PvPS0KyNAST0WMxB2i5yfhGsV25nFg2Dp2j&#13;
+ibICLMdbZQ==</DigestValue></Reference></SignedInfo><SignatureValue>Fw1l3+33GrMcZ4zejQm1bZXXVYhT0NG3D5swmuXFSB6iWzYXec/PoBTBTKeTOPPLX0h6WxG7r+jb&#13;
+DN5vtrYVpS633xjCaKtsvI3HH1XVYuH5OQJxTRE6Xl1lti/CEQnXOvLqdREsgnXYnQpHmTmiS1gJ&#13;
+BSBIEwn300umotIa+2Xs9AtADRmXbsupx9GIC8yYwRZyfwZK0Mf8a3YiLrPC1m3PRGaBrCuCAUUM&#13;
+XtgxNNXsjt9vICdJzPHIujY5e0HNm+Jr4E5x0LugMflPjaf/Np0u77E6tU3lVd6tZG1Wkdjokrjq&#13;
+hfq2zjkruJMEizc/i/ZymFh60UIqQrSfM8HjgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1129,4 +1084,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_70ef7007-6ced-4629-9587-d8a61ae3c679" Target="#_0b1f9be6-46c8-44ee-8654-5b5206926f93"><Timestamp>2020-12-11 00:56:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e3c32bd2-123f-4225-b920-386c8dd1ae51" Target="#_1db98c6f-afea-4aa1-8102-2c7b84edafc1"><Timestamp>2020-12-11 00:58:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
