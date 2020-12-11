@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:4tASLsXe6m8h/lpR4gdm6r2Q50pvD0i/+LWQ6CUI"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6gl2HT1hJt+C6YIruYB8beWTBKF5LuAoGWoVsWIb"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sQPjI63YJAhsOaT90tn5G2LzYcRiy3sRPGwcdMzJMzW/nKT/vQL8oQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k/h/1fKIE8ZuFO2FodgEIhNfzQCt70pPvBva8stXbx7EaF3gGXV+pQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y+/DxzVLRpfp21AeCCibswIdHGBb0UYZTdaM58CA/7u2M0vZwRFGiw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xQkrG07TxXxABjOM/JrA4QOLaeyCWy0CWi3q4MT3p4F+olMEpgYC6g=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -154,7 +154,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0NpiSuIQDEi5Uc7sHLD2P0KNxXegruBwq3+wUXJj"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nmw2qemq8NvqPHSZ8ubmmRmYqRTZgBdIvkFDjXY1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -309,13 +309,13 @@
       <column comment="" key="false" length="53" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="Sales_Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Tender_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="14" name="Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Pack_Size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="is_Taxable" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="is_Taxable" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="Thumbnail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SFDA_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="MDMA_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Product_Weight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Product_Weight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Tender_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Manufacturer_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="Product_Weight_Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -382,7 +382,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="Price" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
@@ -429,7 +429,7 @@
         <mapperTableEntries expression="row1.Name" name="Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Sales_Unit " name="SalesUnit" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Vesion_Id " name="ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Version" name="Version" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row1.Version" name="Version" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Price" name="Price" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries expression="row1.Pack_Size " name="PackSize" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.is_Taxable " name="IsTaxable" nullable="true" type="id_Boolean"/>
@@ -451,13 +451,13 @@
         <mapperTableEntries name="Name" nullable="true" type="id_String"/>
         <mapperTableEntries name="Sales_Unit" nullable="true" type="id_String"/>
         <mapperTableEntries name="Tender_Description" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Price" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Price" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="Pack_Size" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="is_Taxable" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="is_Taxable" nullable="true" type="id_Boolean"/>
         <mapperTableEntries name="Thumbnail" nullable="true" type="id_String"/>
         <mapperTableEntries name="SFDA_Number" nullable="true" type="id_String"/>
         <mapperTableEntries name="MDMA_Number" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Product_Weight" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Product_Weight" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Tender_Number" nullable="true" type="id_String"/>
         <mapperTableEntries name="Manufacturer_Name" nullable="true" type="id_String"/>
         <mapperTableEntries name="Product_Weight_Unit" nullable="true" type="id_String"/>
@@ -483,7 +483,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:f17ZrYaXP+xBUeKpGFI2CYB/q8ai42uUs9zxhHdR8UjLNsFyc8xmPw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Cza9UoAskz7vwAmQ0/SXTD4n8PVK9F7lb7Rw7WvIMx8dkSbbavx3dQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Product&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -631,7 +631,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="Price" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
@@ -685,7 +685,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="Price" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
@@ -737,7 +737,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fV2S/qQ7++d35xKqmlPI7SLvS0hDyOstcvYSmop9Qdkt+wyupwxcVg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RqYkeGc71CXO5Az94/1AZ3EfJP7jjdxOI05ZZKJY+20Fyf5Xq8BYOA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -774,7 +774,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JFdv7VjWbXAq7n/Lm9on2VYYVeTRV8eDPMvxDJSZ6ck/2AzbDHdVsw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vyBLv9wk3vg1XAB7GE5mTIz8+Bs/hPyFc8sWJsrUMz1WU1zc5d6Pww=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Product&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -846,7 +846,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SalesUnit" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -917,7 +917,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SalesUnit" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -981,7 +981,7 @@
         <mapperTableEntries expression="row2.Code" name="Code" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.Name" name="Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.ID" name="ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Version" name="Version" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Version" name="Version" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.SalesUnit" name="SalesUnit" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.Price" name="Price" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries expression="row2.PackSize" name="PackSize" nullable="true" type="id_Integer"/>
@@ -1008,7 +1008,7 @@
         <mapperTableEntries name="Code" nullable="true" type="id_String"/>
         <mapperTableEntries name="Name" nullable="true" type="id_String"/>
         <mapperTableEntries name="ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Version" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Version" nullable="true" type="id_String"/>
         <mapperTableEntries name="SalesUnit" nullable="true" type="id_String"/>
         <mapperTableEntries name="Price" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="PackSize" nullable="true" type="id_Integer"/>
@@ -1040,7 +1040,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oMhlkDV10nv9F6nliJeHg5Dl/WjdKLZRBd4z8pFwzxlizXAZchlSZg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N9I906Snpqtj7NsbbDplDluu4X9C0GTUwTzG5fkf+ZW0MUvzmFkNaw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Product&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1210,7 +1210,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SalesUnit" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1279,7 +1279,7 @@
       <column comment="" key="false" length="255" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="1" name="Version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SalesUnit" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1479,13 +1479,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_45dbd414-312d-408d-95dd-b02d3a4b118a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VMNIHcfo+z0pmF6u/hv5bU1aX4m2ltmRgtN9n6u/Au7kaI2KFabrhujD37mpM6Xafz5l0D+k++Kc&#13;
-i35p/OyY7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0606111a-8415-4d6c-9e4e-8da110ceccb4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CqywYhzZZU4Vrlpzl9fudxy9R6EhEGpz44K9ENFFXqAFXsgZrXSri1juvYall+mw5L1ruK9TzYfr&#13;
-ME8rW/aGpQ==</DigestValue></Reference></SignedInfo><SignatureValue>png0kOt+X18rQIQJr/HaHOgmSVhO4ugKCe6GPYGszzKQUMIh/AVhaV41QvZ9GKKORrxJIN2Kfpni&#13;
-KmL3QtuFUZdXqBjE09lPFFbHLsU1hkeeR+LGcK9WnL3Vccovp3A/KR6QLQTawjBYilfbH/UJklhF&#13;
-zyOKRAYH7ARKXurONc9LFXqPZh8nAr8IZw49m/9r3VpOY3Itm9/b1h2ozmf67XxAJFqILFHVcsJ+&#13;
-+J9Y4obbeOgkkUhXS0pErNYlLci9Cd7yUik5mlVmkO4jP4IfV8lKQyYrvuYoW0ev/IA42crwtXaE&#13;
-MPF6S179lJC3h1KYA2kSUr/E9TG57ndGHK6l4w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cd5e5c9a-891f-4f97-877f-2221e61dcd3d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>E4VL9I2AuP9NuN8TH4E91cGUYOUSZG36yCz/m+mPodz4k6i4HJfdbTVub5qtsEgM4VDi3TmdZ2cF&#13;
+AmtpOQE/Tg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_729e3ad3-2c05-4bfb-a1a6-22a3cfdafd65"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+SGSR4Xcbu8qM9Vng+QtagAcEDF3eFMGnsglDMUC7hhTz+YurS0gak38CV8nGP4H08+0OBG4qMo0&#13;
+xTQU4QQ/sg==</DigestValue></Reference></SignedInfo><SignatureValue>ZN908DqCw2FAck9o6BS5F/3NdORtYXDdrWm9KOwsx7KVzQ92UTiWx6pH8l8T8M1TeE0gLlAH19JO&#13;
+FJdT2ivzncZNFRrUKcMJcaBfIO/qEOkNDLnt0YvEHhBbLNKLn5LEWL/XtJ/zkzAl3Evqv/+ktVCO&#13;
+qMqyE7wfFQz2LN7tv2b/amxIggTteuRQzNbYme6Cxe17xQ5M53DxA4QvIVKiT2a+jqH1/w21ByCZ&#13;
+Z1nxIHivd6V8AYPi9OwumyY5rmQzfRCDqsKEnWPatjI2j+jyGlNjkeE3crssQG92bE+/y6iQQzNx&#13;
+DMkY4RBy4Sm8L96cJpEAvWmimLRCCKjMPHyVCg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1507,4 +1507,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0606111a-8415-4d6c-9e4e-8da110ceccb4" Target="#_45dbd414-312d-408d-95dd-b02d3a4b118a"><Timestamp>2020-12-11 11:06:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_729e3ad3-2c05-4bfb-a1a6-22a3cfdafd65" Target="#_cd5e5c9a-891f-4f97-877f-2221e61dcd3d"><Timestamp>2020-12-11 11:22:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
