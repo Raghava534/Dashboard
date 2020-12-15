@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:U6kj0nAo2EDtOiIZ7V4V76Zdt5YO59H5hflJm9WE"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XItel3fHn7AObaeGWhdpBxlmKs67R+DfoU6pm3m3"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5DgZNXRRH6BDME/7cecy7gtHmSSZu700L4uELjKT8KNmgGnLuOmkrQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:h+28p6OlSALOkhTlcRvngQb4urNLLVaUSUkIa6x59N31zJ65M1pqLQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G8bLi7ZVEJMJrvdT5gi/dm/L5qv4/lkaVr8EuIzqxM1c79AwD5Xb3Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cpVfGf3LNm9MFcBUx4nmU1+B8lqGni+uopI1Rwl7g2QpZSZJB9c4Fg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -146,7 +146,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P6lytc8gc/C6kgM1sy1sRdDcGHHfBiqWaWBVND1f"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UDk9XiHPNcC2F0cEearC9xm994InSe04mbxOczQH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -446,7 +446,7 @@
       <column comment="" key="false" length="0" name="SP_Requester_Comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SP_Approver_Comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="Code_as_Updated_SupplierStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="Customer_Delivery_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Customer_Delivery_Date" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Actual_Delivery_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PO_Issued_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Operator_SentBack_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -632,12 +632,6 @@
       <column comment="" key="false" length="1" name="IsSharedProgram" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="AuditCreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="AuditCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="255" name="AuditModifiedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -686,7 +680,7 @@
         <mapperTableEntries expression="row1.SendBackFlag" name="SendBackFlag" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.PK" name="PK" nullable="true" type="id_Long"/>
         <mapperTableEntries expression="row1.Creation_Time " name="Datetimecreated" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="CustomerDeliveryDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Customer_Delivery_Date " name="CustomerDeliveryDate" nullable="true" type="id_Date"/>
         <mapperTableEntries name="SupplierDeliveryDate" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.Actual_Supplier_Delivered_Date " name="ActualDeliveryDate" nullable="true" type="id_Date"/>
         <mapperTableEntries name="ExpectedDeliveryDate" nullable="true" type="id_Date"/>
@@ -699,14 +693,12 @@
         <mapperTableEntries expression="row1.Operator_SentBack_Comment " name="OperatorSentBackComment" nullable="true" type="id_String"/>
         <mapperTableEntries name="OrderRejectionReason" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Customer_PO_Issued_Date " name="POIssuedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="" name="IsSharedProgram" nullable="true" type="id_Boolean"/>
-        <mapperTableEntries name="AuditCreatedBy" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AuditCreatedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="AuditModifiedBy" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Is_Shared_Program_Order " name="IsSharedProgram" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="&quot;SYSTEM&quot;" name="AuditModifiedBy" nullable="true" type="id_String"/>
         <mapperTableEntries name="AuditModifiedDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="SPRequesterComment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SPApproverComment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CodeasUpdatedSupplierStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SP_Requester_Comment " name="SPRequesterComment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SP_Approver_Comment " name="SPApproverComment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Code_as_Updated_SupplierStatus " name="CodeasUpdatedSupplierStatus" nullable="true" type="id_String"/>
         <mapperTableEntries name="PayOnAccountPONumber" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
@@ -748,7 +740,7 @@
         <mapperTableEntries name="SP_Requester_Comment" nullable="true" type="id_String"/>
         <mapperTableEntries name="SP_Approver_Comment" nullable="true" type="id_String"/>
         <mapperTableEntries name="Code_as_Updated_SupplierStatus" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Customer_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Customer_Delivery_Date" nullable="true" type="id_Date"/>
         <mapperTableEntries name="Actual_Delivery_Date" nullable="true" type="id_String"/>
         <mapperTableEntries name="PO_Issued_Date" nullable="true" type="id_String"/>
         <mapperTableEntries name="Operator_SentBack_Flag" nullable="true" type="id_String"/>
@@ -769,7 +761,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0d4+lRiFGZE00hGSKywnrPWcD+0syfxnSghXaoqhc9bwP7UR4h05yg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:deQhV6liEPr5s7kdl7q98yYdJH/Ali2SPt2jmqi/5dD1JO3f6j9Ziw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Order&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -988,16 +980,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AuditCreatedBy"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AuditCreatedDate"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AuditModifiedBy"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1154,12 +1136,6 @@
       <column comment="" key="false" length="1" name="IsSharedProgram" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="AuditCreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="AuditCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="255" name="AuditModifiedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1297,12 +1273,6 @@
       <column comment="" key="false" length="1" name="IsSharedProgram" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="AuditCreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="AuditCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="255" name="AuditModifiedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1367,13 +1337,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d567952e-9bea-4739-8a01-68ddf943c855"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TdqUDeMYCXMc5CuRZuRmd3fUUwK43LeQKN/juFWfrIFWcF1fnmZPjW6g3xBzCJt1DJE3aEDG9s4b&#13;
-bOvcdlX50w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3353ac33-26c9-4232-a115-8d80f57d3914"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wD7i5mXEySwD4hTY3/VBqAeYf7s+c5Y+y6Ryavm899eHuF6bzbDD1QdjQqSHB4czohJlS/J0nuaF&#13;
-KEU1maQ0gQ==</DigestValue></Reference></SignedInfo><SignatureValue>G/t8nDoli5jZjQv+Vv6iaaJDjsYKpbP7f0JJu9Uxx/bQw70bf6mTALsdYGY+N7jpjUPVav1oGSEi&#13;
-jK0EMj4xdFB2zHmFPr6WIb3+dLiFhi4dGXW5ki+A86C0dFmyF63zNC+tUJ3nG+Swef3qv9Z6i7sh&#13;
-jGUgsOTaICAdjF5ZDWRNdDSiXP6LV6FwIGZ6F3u7K2whCY8hgcUHND6ZSIpq81EgStIpFDSEkM2K&#13;
-LGb4bA20AJa381BrKVHovvRm6NSe63ug6+MTMzme8rtaJtyh964Yu8UYbESdQI1VnUq3k1kI7qaw&#13;
-2SlX2x7GNAvSAbjnyceNxgfN7KJkUPtvsuauTA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_14ba78ee-1a37-4735-b3bf-6bb7b1dc82bd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bGa736omDkf7pitlPIIp9rksw/gIc3Z2+IaQcfHfZLVknnociQWRMz86c7A9gNSm0ykHQ+62vJPt&#13;
+P3YdGRipOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bd447051-a7e3-4c5a-9ccf-4086bdd74ef5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IZy7pq0a2TBEA+VYjRtaBfg8ppYHQEGJxxPIkXgYhsJNVa9B2i1niv40BRanJLxd7vuNFnBAp6JO&#13;
+EPF6zmjiJA==</DigestValue></Reference></SignedInfo><SignatureValue>nXlcYnDE+jQKkodVMGNQsvE2rVGI0ifSJ0SPvx6EdIGEU/Tyhii4/eOP1Pg47WUF9wrbbAtBIUOd&#13;
+ix3I169N0vtD/ptLghLZADaB+PpWMrZlgqBHpk25y4RbOJ9kbhch3ArJCHZiU3UTtWzMjYNWQRfZ&#13;
+kMfJx+n4wHkrKPsimqheXjZHemWWAyr6/wuWnr6v6pC9uDcJTs1jUne7Vpu85A6V1dBnbZBp7nud&#13;
+p1w1hqXRav6bBHqvuIdGfRrxsOj4yU7yaidPz1LYYTaP9reNsCxOIlp6Sn7gna0yy/NCqjX42i42&#13;
+jq0LIwURuFt/h5jbNzTpZ/lY9UkHjwitQ+hS1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1395,4 +1365,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3353ac33-26c9-4232-a115-8d80f57d3914" Target="#_d567952e-9bea-4739-8a01-68ddf943c855"><Timestamp>2020-12-15 08:35:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bd447051-a7e3-4c5a-9ccf-4086bdd74ef5" Target="#_14ba78ee-1a37-4735-b3bf-6bb7b1dc82bd"><Timestamp>2020-12-15 08:38:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
