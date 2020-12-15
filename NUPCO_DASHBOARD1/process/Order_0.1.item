@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:5H/yRBA8GrZ+lhe3thjF+jQTtRPHJRKFCnVqDZZR"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:jeBDQNLE33V6o+YjUFfO4nmr2o7YrhcrH8mGMGPk"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vjO1t+wR6oENrgs1Cs2g6FFr4+qh/2kOwnUxr7Oq0UiAzs72Zp01+w=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z8WWvuA3YKxfuMbQjjSu61OzIcFKyBbatEYhVepA3TLpeLOECd9TWg=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1lQrdw1fNud046Lf5jkndaMj4NnTUtztGmF32M6GE8O5SVwJCRLI5A=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b9rNta54IQn4EnNLUzYdIi9gdltVH4sXvNnAQOe4vR7TWSsfbqPUKA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -146,7 +146,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4p7BCLXIFcA+hAEQQYFZRXvQhZtdk46G721YdsQa"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rfyOtc4ZCBVRxbpeIlKRA39Alhi5ZYrGhTk7JckH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -502,6 +502,70 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_WU7lgC8_EeusOJYVOpHnlA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PK" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Code" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Delivery_Cost" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Delivery_Charge" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Vat" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Requested_Customer_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Requested_Supplier_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Total_Price" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Uid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Sub_Total" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="B2BUnit_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Uid_as_ApproverID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_SupplierID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_ReleaserID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_Supplier_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POBOX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Postal_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Street_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_as_Region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_as_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_As_Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_Sent_BackFlag" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Creation_Time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Modification_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Actual_Supplier_Delivered_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SLA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Supplier_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Transporter_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PayOn_Account_PO_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Supplier_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Transporter_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_SentBack_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Customer_PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Shared_Program_Order" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SP_Requester_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SP_Approver_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Code_as_Updated_SupplierStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Customer_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Actual_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_SentBack_Flag" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SendBackFlag" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBRow_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -510,6 +574,10 @@
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
@@ -531,13 +599,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_782428ae-5d50-4bb9-a0ab-3d91c1058182"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qw0P/oIJQtzWZose9yK3/J8SxNdXcTNZLrLXGWvd2AJXC5i2dJS7q6oJKZrx8t95uDMQjAGFv+V4&#13;
-lOXwSCnJOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a80ca232-e9ab-4659-a6cf-a6e11a4a824f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oeCeeYfFC/X0Y4O8fKBWL/e+5F0U1rAfLl34XJGkjdA2poFUMNF//bpcwsZG5K3eSpcjxV5FLxC+&#13;
-38NuHsc8hA==</DigestValue></Reference></SignedInfo><SignatureValue>W/LvQTs9l7E4lPmod62p92nlciaHEN7y7flohaUN2wudEF4jlfRvB9uNYSC9FCPP3+Yy5SgwIoP0&#13;
-1TdUFw4tFnnjuzNnouMPr1MKh7BqZX7HVSvSOUvP4u7vPDQvelA/8KGHqXMjO2GZatIdWsXvVEow&#13;
-C75/g/qbcmgNMu9kSvnoqgJgy81r+DZ8SThALixm3j2ir1gTlOQUdZ8xI3U0hEOwJsyatk8g9sDz&#13;
-g2P6ul92R36MztWEH4LbHZnQ6TTTMkZufC5knau3JkaLd1xTqoLm+enfnseR9e/dUZcJzBVudStR&#13;
-/lX/hQcdlTRhrTas4l2Py3MASe4eXNZcNoIwbw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fb9a2db0-6aac-4827-8a12-ae5224a57118"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AGRyQvroEmgTu4OL+rARCTRXykeF2ltHdn6bimFeGVEust4K6VtOymaM+5Q/Eg1aCmwHqOkLjgZf&#13;
+eyzOGaCOpg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a9571f5e-f337-478b-ab64-e567661d7f7a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yGSHNllxFZ7KlNzbSG053LUQr1U9k723y2pd+wVFdT1WukpVEMDsGPcn3aF8awEnfg8xgahjmYXZ&#13;
+gVkk2pB9ZA==</DigestValue></Reference></SignedInfo><SignatureValue>bGJ9YEpN+Pmmv1ZTeyWvp5i0WihQO0Y+o/GmOts+kEcxBtpAZuXKWPnow97o1e0N9hrkW4W0UqD7&#13;
+6TyZ4DUD8By4SVTkPVb8SCakuhK5hbp2CPJO6GjyRbyOIcS1EsCcgzb0fyTJGUO6PBYuEYhsHWRI&#13;
+NS2wphmPgwidGeCSRw6oUgebCasgTipRz1mJeiFFKe6O2VTrpOyvNhOkIHV/KiqRMJ8D15U1eJVx&#13;
+/j7j5gOGhbpQUOnrnyLLTV/S0G+VgHJ6zAoMbSLCfRiDsVi8oMeSySnDJ/Zylgmtqo9RUbQfJFbf&#13;
+CKM1ZIxqzplGQfA5O+8IcOf4SUBzkN84ERFi0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -559,4 +627,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a80ca232-e9ab-4659-a6cf-a6e11a4a824f" Target="#_782428ae-5d50-4bb9-a0ab-3d91c1058182"><Timestamp>2020-12-15 07:36:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a9571f5e-f337-478b-ab64-e567661d7f7a" Target="#_fb9a2db0-6aac-4827-8a12-ae5224a57118"><Timestamp>2020-12-15 07:36:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
