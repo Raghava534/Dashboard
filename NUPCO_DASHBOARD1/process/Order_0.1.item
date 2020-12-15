@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JcOyFXAdlyu0S0wDbS4f4WySegebs0WUsMQlVjBV"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TOqvTBu3BZ4j07y5F8A5/5YVNbpT3fE7J48YO8qm"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KyWDMrZCfqtNLeJNAmT0JSxX12GkURlglhZCOeF5+nQOg9jXBEobAQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BshuGzvd4Nsy9LfMJtJOc1KbzThxoOcsxT58BEP3MVSgA7VkNDu9JA=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yAofGeTSkBrCjW3hxiSxvsgtTWJCsLwHo0gf2iKdJBdFyh4yw3Y7mA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:d0cUTH54xS55oRSgmDhyF8vK1QeMw8NEyUW2aRnkYFwkfraDDLEVYA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -146,7 +146,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tRd/edeFZUTWutkrRp4NlvNVyIrqkdW83FdBB3NJ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6zIKJyaQRvNSk8bzU3X7no2rGVUUTzDysSyOEw2C"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -500,7 +500,161 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_WU7lgC8_EeusOJYVOpHnlA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="order">
+      <column comment="" key="true" length="13" name="PK" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Delivery_Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Delivery_Charge" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Vat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Requested_Customer_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Requested_Supplier_Day" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Total_Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Uid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Sub_Total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="B2BUnit_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Uid_as_ApproverID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Uid_as_SupplierID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Uid_as_ReleaserID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Uid_as_Supplier_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="POBOX" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Postal_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Street_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Name_as_Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Name_as_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Name_As_Vendor_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Operator_Sent_BackFlag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Creation_Time" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Modification_time" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Supplier_Delivered_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Supplier_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Transporter_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PayOn_Account_PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Supplier_Invoice_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Transporter_Invoice_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Operator_SentBack_Comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Customer_PO_Issued_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Is_Shared_Program_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SP_Requester_Comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SP_Approver_Comment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Code_as_Updated_SupplierStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Customer_Delivery_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Actual_Delivery_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PO_Issued_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Operator_SentBack_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SendBackFlag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="order" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.PK" name="PK" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.Code" name="Code" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.Delivery_Cost" name="Delivery_Cost" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.Delivery_Charge" name="Delivery_Charge" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.Vat" name="Vat" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.Requested_Customer_Day" name="Requested_Customer_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Requested_Supplier_Day" name="Requested_Supplier_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Status" name="Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Total_Price" name="Total_Price" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.Uid" name="Uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Sub_Total" name="Sub_Total" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.B2BUnit_ID" name="B2BUnit_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.Uid_as_ApproverID" name="Uid_as_ApproverID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Uid_as_SupplierID" name="Uid_as_SupplierID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Uid_as_ReleaserID" name="Uid_as_ReleaserID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Uid_as_Supplier_Code" name="Uid_as_Supplier_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.POBOX" name="POBOX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Postal_Code" name="Postal_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Street_Name" name="Street_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Name_as_Region" name="Name_as_Region" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Name_as_Country" name="Name_as_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Name_As_Vendor_Name" name="Name_As_Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Operator_Sent_BackFlag" name="Operator_Sent_BackFlag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Creation_Time" name="Creation_Time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Modification_time" name="Modification_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Actual_Supplier_Delivered_Date" name="Actual_Supplier_Delivered_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SLA" name="SLA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Supplier_Status" name="Supplier_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Transporter_Status" name="Transporter_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PayOn_Account_PO_Number" name="PayOn_Account_PO_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Supplier_Invoice_Number" name="Supplier_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Transporter_Invoice_Number" name="Transporter_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Operator_SentBack_Comment" name="Operator_SentBack_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Customer_PO_Issued_Date" name="Customer_PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Is_Shared_Program_Order" name="Is_Shared_Program_Order" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SP_Requester_Comment" name="SP_Requester_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SP_Approver_Comment" name="SP_Approver_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Code_as_Updated_SupplierStatus" name="Code_as_Updated_SupplierStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Customer_Delivery_Date" name="Customer_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Actual_Delivery_Date" name="Actual_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PO_Issued_Date" name="PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Operator_SentBack_Flag" name="Operator_SentBack_Flag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SendBackFlag" name="SendBackFlag" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PK" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Code" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Delivery_Cost" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Delivery_Charge" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Vat" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Requested_Customer_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Requested_Supplier_Day" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Total_Price" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Uid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Sub_Total" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="B2BUnit_ID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="Uid_as_ApproverID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_SupplierID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_ReleaserID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Uid_as_Supplier_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POBOX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Postal_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Street_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_as_Region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_as_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name_As_Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_Sent_BackFlag" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Creation_Time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Modification_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Actual_Supplier_Delivered_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SLA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Supplier_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Transporter_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PayOn_Account_PO_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Supplier_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Transporter_Invoice_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_SentBack_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Customer_PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Is_Shared_Program_Order" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SP_Requester_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SP_Approver_Comment" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Code_as_Updated_SupplierStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Customer_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Actual_Delivery_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PO_Issued_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Operator_SentBack_Flag" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SendBackFlag" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -659,6 +813,14 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
   </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="order" lineStyle="0" metaname="order" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="order"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -679,18 +841,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a77dfd98-4924-4ca8-b304-2ea68a205159"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JBWQHw/7xNXmHioSnQPLFZWKPuhoGTBVcMfOWiUQEXSdynPJzksFLmGeT5t82W2Vk+stG40iI4aT&#13;
-TjnzPf0ihQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d059a1e-0510-4694-8c1f-643166510dcc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YgiG4AseRhSe84fFbRYgleVBrRV9oviXfCPbeQDmQNia7AwXtP1km/GHgNeIxbikh5YZWoVfNBlG&#13;
-e/u3ZZY/hQ==</DigestValue></Reference></SignedInfo><SignatureValue>EiU9gNDtDTkk+vwTbW+1BaWpg8aUtSXHmo9hBDVFFmCIdMcHDqLWBO34EWk15HX7GXqN1SwcURUu&#13;
-/VttzTdUk1UYw+rFmKX//iohrIUM4iEhUVDg5ALzA2AT6nr3wJTWGzr2CDcMH53EHRco7iC/Dp3d&#13;
-+UJAXCE3ZY5qQ1kzMrayLM0y3MmiNfsrrJRSu5qivFxjLsRqQEzvd4dIqr0hfoD+keziryTq4Lnt&#13;
-sMZEgzUBV1tc8IOwaxTg0YE191xTN6cJCCgCMrfF5hdaxeJtDaubyYw5SYFGzpPIRHRnX3yXmMkI&#13;
-udAb7+HqwAokOUsuXCYmXkFrL7NAMxUQouXk6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9d9f1724-e7a8-4093-b998-f1175edbd5af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uK3sSDRNMPg3Ggr9gqeZmitEkh1HCl1BATVgpcjQHxIWRKYv6lpFhApfNFC5xQTdBzzgPNdp3WGc&#13;
+Dw9hq+Zung==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0c1a94c2-6c9e-4bcb-88dc-f0df37f4ee21"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c0azxjgPnat6P7NXl34o6uRQy4guRB5Sf5Sj3H9CLrzsszOzPbHn4YnRlN9gcgmHX29BsOQuuN7f&#13;
+/7BAawNAVw==</DigestValue></Reference></SignedInfo><SignatureValue>T3UhnJsuzlfEarFpoUaqQEkedZPMYTgv1QbIFFxMTQ4yWs8TGfVoU+02PKbZYCdFlyB0D8cJqwtN&#13;
+kTwatfempDxY1k/giHilLTUwK7XT0rNJffBN4mQxYrPyBjlQj5/ATXyvkWazoTkxSEsI/NaI4oQ/&#13;
+iFs28NG8x/a0ntHzo11VaWlxl/lXmfP650LrhcW9v95CgNe9iPsu+j6+uA6neRmk+3Y1WvDoaMKM&#13;
+c0GQNiSnoVfSASPmKIhBATrXKk54dnXB+MWJv4gvtLdC/ZilHkEN88rUTbFOJM00Ceh/pCalwv/1&#13;
+wjh03h1oRfzc9GCnsx3ZE1LWNGt4gBJ+qcZ2Yg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -712,4 +869,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d059a1e-0510-4694-8c1f-643166510dcc" Target="#_a77dfd98-4924-4ca8-b304-2ea68a205159"><Timestamp>2020-12-15 07:40:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0c1a94c2-6c9e-4bcb-88dc-f0df37f4ee21" Target="#_9d9f1724-e7a8-4093-b998-f1175edbd5af"><Timestamp>2020-12-15 07:44:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
