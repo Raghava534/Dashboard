@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1://34a2GvM417yErqrw+vlZdaKpfiS881rfakEe27"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:fMmf2/sKqdQb5wj3/4xne+C0CCVRKuOu1QDjE3sU"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Y3hEnuDuVNV01BwNFEdSNh6lBydDyT+s0sIqh95NczPLv0EL0d1SJg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:47YhKBSxY9Udf7go/2MPKEVKYjeVDSEB3X9IPpr5OzxeFF4SuNqyxA=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZK0i/4kt5UZE6npgD6D8uRRyHAddsXEvflrUWZRmrXaaKc8zy0/dtA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D0mtU4daa64wvuQz2DDvpiOHkH5Yjr0Fp1yd75+A74mYBK0hWAUrEA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -138,13 +138,13 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_AaE38EB7Eeu3Mb1e79_d6g"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_dRlJkECNEeu3Mb1e79_d6g"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/NUPCO/SAPHybris/Current/Tender_latest.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:FcFVa5osmDuTh4/A0+GIOGNV5+Vp7OU5XpCc3bMj"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
-    <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="&quot;Mainfile&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/NUPCO/SAPHybris/Current/ten.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:S6V2xoHZG23STGHXf9LeuUTiV20A4OLA2ftxJCll"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false">
+      <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
       <elementValue elementRef="USE_REGEX" value=""/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -154,8 +154,10 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_dRlJkECNEeu3Mb1e79_d6g - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_AaE38EB7Eeu3Mb1e79_d6g - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_dRlJkECNEeu3Mb1e79_d6g - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
@@ -206,6 +208,70 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Manufacturer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trade_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SFDA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Validity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Concentration"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_PRICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NET_UNIT_PRICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUPCO_PRICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDMA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Catalog_No"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Volume___Package"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Volume"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Package_size"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Package_Unit"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pack_Weight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_of_weight___example__gm_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lead_time___in_days_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warehouse_City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="More_details_about_the_Items"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Marketing_Authorized_Company_in_Saudi"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HS_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VAT__Y_N_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOTES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOH_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODA_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NG_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTION_NEEDED_BY_IT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="New_Supplier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_Generic_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_Trade_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IT_Codes"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pack_Weight1"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
@@ -279,6 +345,102 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Manufacturer"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trade_Name"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SFDA"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Validity"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Concentration"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_PRICE"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NET_UNIT_PRICE"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUPCO_PRICE"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDMA"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Catalog_No"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Volume___Package"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Volume"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Package_size"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Package_Unit"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pack_Weight"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_of_weight___example__gm_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lead_time___in_days_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warehouse_City"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="More_details_about_the_Items"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Marketing_Authorized_Company_in_Saudi"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HS_code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VAT__Y_N_"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOTES"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOH_Code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODA_Code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NG_Code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTION_NEEDED_BY_IT"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="New_Supplier"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_Generic_Code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OLD_Trade_Code"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IT_Codes"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pack_Weight1"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -288,22 +450,22 @@
     <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="tendervarchar"/>
+    <elementParameter field="TEXT" name="LABEL" value="ten"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="34" name="Item_Key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Serial_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Serial_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Item_Added_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Column3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Sub_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Tender_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Awardation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="NUPCO_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Nupco_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NUPCO_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nupco_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="216" name="Item_Specification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="SRM_UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="Supplier_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Supplier_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="Supplier_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Marketplace_live" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PHOTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -314,21 +476,53 @@
       <column comment="" key="false" length="14" name="SRM_country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="Manufacturer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="Trade_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="SFDA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Validity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Concentration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NET_UNIT_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NUPCO_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="MDMA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Catalog_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="Volume___Package" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Volume" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Package_size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Package_Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pack_Weight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Unit_of_weight___example__gm_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lead_time___in_days_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Warehouse_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="42" name="More_details_about_the_Items" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Marketing_Authorized_Company_in_Saudi" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HS_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAT__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NOTES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MOH_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MODA_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NG_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="ACTION_NEEDED_BY_IT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="New_Supplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OLD_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OLD_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="IT_Codes" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Pack_Weight1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="34" name="Item_Key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Serial_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Serial_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Item_Added_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Column3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Sub_Class" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Tender_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Awardation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="NUPCO_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Nupco_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NUPCO_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nupco_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="216" name="Item_Specification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="SRM_UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="Supplier_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Supplier_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="Supplier_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Marketplace_live" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PHOTO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -339,6 +533,38 @@
       <column comment="" key="false" length="14" name="SRM_country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="Manufacturer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="Trade_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="SFDA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Validity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Concentration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NET_UNIT_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NUPCO_PRICE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="MDMA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Catalog_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="Volume___Package" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Volume" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Package_size" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Package_Unit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pack_Weight" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Unit_of_weight___example__gm_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Lead_time___in_days_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Warehouse_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="42" name="More_details_about_the_Items" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Marketing_Authorized_Company_in_Saudi" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HS_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAT__Y_N_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NOTES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MOH_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MODA_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NG_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="ACTION_NEEDED_BY_IT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="New_Supplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OLD_Generic_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OLD_Trade_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="IT_Codes" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Pack_Weight1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -536,37 +762,37 @@
         <mapperTableEntries expression="row1.ACTIVE_USER" name="Active_User" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.SRM_country " name="SRMCountry" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Country" name="Country" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Manufacturer" name="Manufacturer" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TradeName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SFDA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Validity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Concentration" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UnitPrice" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOC" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NetUnitPrice" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NUPCOPrice" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MDMA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CatalogNo" nullable="true" type="id_String"/>
-        <mapperTableEntries name="VolumePerPackage" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Volume" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PackageSize" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PackageUnit" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PackWeight" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UnitOfWeight" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LeadTime_InDays_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="WarehouseCity" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ItemDetails" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MarketingAuthorizedCompanyinSaudi" nullable="true" type="id_String"/>
-        <mapperTableEntries name="HSCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="VATFlag" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Notes" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MOHCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MODACode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NGCode" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ITActionNeeded" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NewSupplier" nullable="true" type="id_String"/>
-        <mapperTableEntries name="GenericCodeOld" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TradeCodeOld" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Manufacturer " name="Manufacturer" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="  row1.Trade_Name" name="TradeName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SFDA " name="SFDA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Validity " name="Validity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Concentration  " name="Concentration" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.UNIT_PRICE " name="UnitPrice" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.FOC " name="FOC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression=" row1.NET_UNIT_PRICE" name="NetUnitPrice" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.NUPCO_PRICE " name="NUPCOPrice" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MDMA" name="MDMA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Catalog_No" name="CatalogNo" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Volume___Package " name="VolumePerPackage" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Volume" name="Volume" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Package_size " name="PackageSize" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Package_Unit " name="PackageUnit" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Pack_Weight " name="PackWeight" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Unit_of_weight___example__gm_ " name="UnitOfWeight" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Lead_time___in_days_ " name="LeadTime_InDays_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Warehouse_City " name="WarehouseCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.More_details_about_the_Items " name="ItemDetails" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Marketing_Authorized_Company_in_Saudi " name="MarketingAuthorizedCompanyinSaudi" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.HS_code " name="HSCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.VAT__Y_N_ " name="VATFlag" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.NOTES  " name="Notes" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MOH_Code " name="MOHCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MODA_Code " name="MODACode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.NG_Code " name="NGCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ACTION_NEEDED_BY_IT " name="ITActionNeeded" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.New_Supplier " name="NewSupplier" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.OLD_Generic_Code  " name="GenericCodeOld" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.OLD_Trade_Code " name="TradeCodeOld" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Item_Key" nullable="true" type="id_String"/>
@@ -592,6 +818,38 @@
         <mapperTableEntries name="SRM_country" nullable="true" type="id_String"/>
         <mapperTableEntries name="Country" nullable="true" type="id_String"/>
         <mapperTableEntries name="Manufacturer" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Trade_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SFDA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Validity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Concentration" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UNIT_PRICE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FOC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NET_UNIT_PRICE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NUPCO_PRICE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MDMA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Catalog_No" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Volume___Package" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Volume" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Package_size" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Package_Unit" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Pack_Weight" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Unit_of_weight___example__gm_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Lead_time___in_days_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Warehouse_City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="More_details_about_the_Items" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Marketing_Authorized_Company_in_Saudi" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HS_code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VAT__Y_N_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NOTES" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MOH_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MODA_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NG_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ACTION_NEEDED_BY_IT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="New_Supplier" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OLD_Generic_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OLD_Trade_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IT_Codes" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Pack_Weight1" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -608,7 +866,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sNoKbbdADVnVAkUQbzDND8HFhREt2zjjG93eZBy2vFhTyzdwvPXt/A=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AqWb/Z0GfVLR1rscvV4UwVg+otcRfq7F59XeMfaQqsDoYxLT4RRu6Q=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Tenders&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1210,9 +1468,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileInputExcel_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
-  </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
@@ -1231,13 +1486,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_81bc9044-2932-44ca-ac43-96cab1742da3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wfewxAtAEicLWBJcQOkSiKydzCXkJcXlPc18D2ClDc+yqldWMu7JJNeSvyWfeQ8Sc9MccuLaPgor&#13;
-m0/RGfQ3Ag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b33c1a1-49da-49dc-a69a-634b3d03c113"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aZQLSwWuVkkXa627ehMJXAQIq4uDrWDwsmi8/uhJZ6fAUPUfGBu7VBuSPfXZeDcPO8IiYoJHCWmw&#13;
-ARJDG1t+7A==</DigestValue></Reference></SignedInfo><SignatureValue>ID+eG1jJMjtZ1qDTJdDBeZnikaGvnrj1RaGSxjQ6KtEgVcvLCNMueqAz2PV8aQdfppj34N7j4xud&#13;
-j6uVTOMhP5XLoMbnNQoSRTQFa/UPDOg87h0GNjOP76xpj16g/ysqkJNm4ptTWIgyKsh6Gd9XzwvK&#13;
-OoqZcGnY0PnJL8n1451ZQaO0D8pTEg1VsYq/v9BEYRR/iySWT1zzPA7/9vAxnbkR5lMbs1Ted1U7&#13;
-Wv0+Wnf+yosinUcoRsVFnydHVQdb9QdDBzBxy0aqdvdIbO52X9lBO7qcCTQUOC0c9v1flqTURhnG&#13;
-4yt0lYK5r/SnL1SR3t9lcbQqjzilI8+eUi26tw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71121d22-625a-49c6-8d46-b4d0a601212e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HWgbeJ4YkKTefK2EBGIjGBMobiDKZaBiauYXL6Z7eNENPcLxY5aQdFRurqSdPY2JGGNqiNQrAXDT&#13;
+BW019bXP7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b9a19dd9-e539-406c-a806-def68c2d05d0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gnfifQ64yVkJmNyB/dXYO8/nOgN5hrXJTkviJHaf2OxvKlbUA7Qhh/zk+wv8V7Pk4a2R9bWizKcq&#13;
+ZZkBShUAVw==</DigestValue></Reference></SignedInfo><SignatureValue>RABi9Zy5LG15OSMFaNLCx75cVFcSTXR6fY02mVxETWzc98PGFJXSO7PgZwvQYRrYnzUTvjO0P2Yz&#13;
+hMc8c2bNd7SHsxWN97Sn+BEiHR506xaWEHG5hr6TpkRJW5LxLLcZtznqn9sEYFGlo/89In8fnAG6&#13;
+OS1Vf9og1Q2R8TwCcNTpXtoVgJIEg9V5fZmxukXXtCmG/tvD/q+xXIFxKkPT67vPRnyrPLjiS1Gb&#13;
+M5TdC8BdMhZkO1eRPdcGfNJKrJGQ8UlCIUrd5Dq/CHmPkFMg39Hd5E5kAWMbiO6LMJNkNkaJfknu&#13;
+9vGR7lilXqxmNXcP3OM02hyCoH/QtmQmV8etNw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1259,4 +1514,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b33c1a1-49da-49dc-a69a-634b3d03c113" Target="#_81bc9044-2932-44ca-ac43-96cab1742da3"><Timestamp>2020-12-17 16:23:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b9a19dd9-e539-406c-a806-def68c2d05d0" Target="#_71121d22-625a-49c6-8d46-b4d0a601212e"><Timestamp>2020-12-17 17:37:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
