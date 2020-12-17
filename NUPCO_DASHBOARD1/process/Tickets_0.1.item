@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QqAJde6aGi8m9OmC4yZHdyu0r8niWYcRRh6rMJSt"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Yn7ye8QKtcQgOV6ypO2p3NJPv/kvM7YpDA8geFx4"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zxjSCg6F48rBL0SJWwNVSj4vH6tRn+9BG2DMbbt42uu3Lhk7N4FS4w=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GJ3q3V3aak0XZlDR66XW3bQEBlZmizpGcG/qfc256qT7TH+GIqnI2A=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NmXm3D+VRuK4HONSO8v/TYlRvkp+5gOtLXvlTXQ8T6nCHDmBO6+5vw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4tJ0ucxQLEcaqxM/n3hiPyuVhl1Kgn5quarzYkmW2cuECJEu9b5rSA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -146,7 +146,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9hYd1yzj1G0vs2h5BFHncze6lWF0aAohfloNq0NN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:T8BpuST8F1W1ZrVTPXdr7yaFvaU7MkCSwjbPrURe"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -353,10 +353,10 @@
       <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="NVARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="NVARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
@@ -375,8 +375,8 @@
         <mapperTableEntries expression="row1.Website" name="Website" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Customer_ID " name="Customer" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.PO_Related_To_Ticket " name="PORelatedtoTicket" nullable="true" type="id_Long"/>
-        <mapperTableEntries expression="row1.Creation_Time " name="SourceCreatedDate" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Modified_Time " name="SourceModifiedDate" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Creation_Time " name="SourceCreatedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Modified_Time " name="SourceModifiedDate" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.PK " name="PK" nullable="true" type="id_Long"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
@@ -407,7 +407,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aGntqzslkpTG0gmB/wZNGBTg0G0F9CeCD16DHjz2XEo6gVjykFFvVg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3Ft/+0qrdY3GB2OVTi+E3sU6RQRAHVCD1HHfBzMlZ9LM9ESvf0q+aw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Tickets&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -535,10 +535,10 @@
       <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
@@ -574,10 +574,10 @@
       <column comment="" key="false" length="19" name="PORelatedtoTicket" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceCreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="PK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
@@ -627,13 +627,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3c9a09d4-1e48-4229-88ba-51d3f8142ece"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ST+Q1GFCduGNy1jccu3IYi1oxg+h41E7Tg0RK9bb5nQny67aitSJp0oEjH8b9w3tMJ9soss5f+sO&#13;
-0Z6b+xOxtQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_92f41b7e-9b7e-4014-a207-84fbc101aaaf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eiTzLCzPhi7zBn+glLIk4JeP/50XjPfJJQE203knFiIh+Thz/9qwFbN6grtVykB/Vw8Ku9I9/iEf&#13;
-4er2h14faA==</DigestValue></Reference></SignedInfo><SignatureValue>ocA8ORAZHiwlC+JMEKG5PrzJ/OGH/4sYUeDknGTtjIu8sD+o/L0Mp9YH5TxTgTgaxbO4O9dJB35E&#13;
-WzibMxWkwvuzdaK2fiHcMeZLrrUkdJwPlTL7c04M1smYL9CzYKTZ6V2ywgYzgtuWvcMoqq7XXmHS&#13;
-MVrLd4+5whEIgiVti6iNOE6hHQwUIgHPWNjYgalQ0S2b8CvnCH9eUx6f5J4z/xt8Z+CW+dI1Ck4Q&#13;
-JRDVVpDr/YNJ5aXKzGGNtCwwXZhVplk9S2C4sG5IT1xJ0ZrSpruF0kYAIatKWfKfvFap8QO+hSj6&#13;
-8fU3NYZs0AtlR9pwlR4oOQsfDUKF49JQzzK9+w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6577cc3e-e9f6-4f4b-9c07-2aeb59398dea"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AhmvL1eoGUTlWyiXZMEJA1eEsr56A0U3WA7eR2GwtgnEG/0YWR9MJCA7jwTFYEfi871zZ2T2nRUv&#13;
+CCpztc1ekQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_23c2291a-e529-4017-ab66-e504920d11cf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>809Z3fkQunoJmplxKSmZqGbKJuRHbeJiyYNTgsP2tRxF7/bnOUNu6IFSe2Rm7YDJDDlOcgfSX+wf&#13;
+OsH2OaNSqA==</DigestValue></Reference></SignedInfo><SignatureValue>CROfMgqra5txnNNvK25M2bBbToglEo9lUbg74poiLiERdGTDqEMEqjLxlfxX7lS3/AZtFngNicLP&#13;
+qA6RgyAcZ7fPTAZ4azwf2WGAseJmIvM+S9x6sKuya9qqBlnq8Zp9y248LlDjrmOKeTnNAJ7QbpAN&#13;
+pE5F6c+L+5gDIu1ROZNc+d6evJ5k+QXopbTBUDjF21RQSPbPs87bGh/bWFcJcP5JohVh0SS4FDy8&#13;
+S9Xzc0ZxxTNlLfiT5i7y/QYtVPbAnQaNWcy5gXkrBCP3+jzMTtxRx00c1aACzIDQhLpTq+50Lj90&#13;
+E/W7PONPX0binzvecvwr2kUA8X+wjOefLOkb5A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -655,4 +655,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_92f41b7e-9b7e-4014-a207-84fbc101aaaf" Target="#_3c9a09d4-1e48-4229-88ba-51d3f8142ece"><Timestamp>2020-12-17 05:04:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_23c2291a-e529-4017-ab66-e504920d11cf" Target="#_6577cc3e-e9f6-4f4b-9c07-2aeb59398dea"><Timestamp>2020-12-17 05:05:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
