@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Mc8YOLQxzyY6UvIzg8lyph7nFnCn9/g3wJKN7Ydu"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XbA5+X0F1+x4TC5x5W7iHQwIgDnYSPxY2wZYF8VM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1Q9d3BCoLwCAUtgPFQ/J2vnvVVkwDDFQj2PVeDkssJOFZKKj4DLzYw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L3bD4GA38NCV9aZ3b1/HI0hzEjjZURlX1+NCv5s8Kc5cFujHJkw45A=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qexTnDXF1msDEqe57eRrnrbw1rd2NEZcCQCxoaW8lELMWwAlfn153w=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:790KdxRFG5X66sQ3YEyd18q92BUBfGmdG+WcPagVLylNG3u8PTb9GA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -130,18 +130,10 @@
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Staging_DB_Connection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="608">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-    <elementParameter field="CHECK" name="CLOSE" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
@@ -323,7 +315,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nBG8CHHmA2fVgrlI0BuHkOPMehnLh5+sCo4KxsxGnv7bJbP6JEcBCg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CmojDuz9gWHcJY+2vtRNFd5tkLXUXS7TcjlgYe+neiHgsHbd2jiooA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;B2B Unit&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -464,7 +456,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y+OGH1ocy4mJsq/sWTkND++ACTrwu55gbMhM+r77"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OS+RW2sc1IJCGHylncBGJCmkLLpt4HN2rDE/lUEA"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -501,7 +493,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0KUHA5w3shhe2oVo/6yfEbktAYWIopFF/oCZiHshnhxuv6ilxFxOhQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rHhGfoac/ni3/x7N54RVStPMOgKcKZWrIOchPDEB181ioJlTYy7anw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -510,22 +502,34 @@
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="DWH_Connection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="39" offsetLabelY="37" posX="896" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-    <elementParameter field="CHECK" name="CLOSE" value="true"/>
-    <elementParameter field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_LuwDgCTXEeuECcsnxqO8zw - Customer"/>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/NUPCO/SAPHybris/Current/B2B&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*.txt&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_2"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="448">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
@@ -538,13 +542,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+yQUBYGztcFLT1HhxZPkbx/NH3xhoDuhgejavV5x3Vx5dWRmtdJvOA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5rOAG6wUuV5XFgq5xoTPrXlY/tKc9FVAjsn7Crqr2+xAOtqIEA3QAw=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_LuwDgCTXEeuECcsnxqO8zw - B2B_Unit"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;B2B Unit&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT nupco_stg.\&quot;B2B Unit\&quot;.PK,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Name,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.UID,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Active,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ConsumedAmount,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.AllowCashOnDelivery,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Amount,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.RemainingCreditLimit,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ReportingOrganization,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Buyer,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.CreatedBy,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.CreatedDate,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ModifiedBy,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ModifiedDate&#10;FROM&#9;nupco_stg.\&quot;B2B Unit\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT nupco_stg.\&quot;B2B Unit\&quot;.PK,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Name,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.UID,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Active,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ConsumedAmount,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.AllowCashOnDelivery,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Amount,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.RemainingCreditLimit,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ReportingOrganization,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.Buyer,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.CreatedBy,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.CreatedDate,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ModifiedBy,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.ModifiedDate,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.SourcecreatedDate,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.SourceModifiedDate,&#10;&#9;&#9;nupco_stg.\&quot;B2B Unit\&quot;.B2BUIDPK&#10;FROM&#9;nupco_stg.\&quot;B2B Unit\&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -574,46 +580,75 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Buyer"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SourcecreatedDate"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SourceModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="B2BUIDPK"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="B2B_Unit" name="tDBInput_1">
-      <column comment="" key="true" length="19" name="PK" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+      <column key="false" length="19" name="PK" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="255" name="Name" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="UID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="255" name="UID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="Active" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column key="false" length="1" name="Active" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="ConsumedAmount" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column key="false" length="20" name="ConsumedAmount" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="AllowCashOnDelivery" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column key="false" length="1" name="AllowCashOnDelivery" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="Amount" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column key="false" length="20" name="Amount" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="RemainingCreditLimit" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column key="false" length="20" name="RemainingCreditLimit" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="ReportingOrganization" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="255" name="ReportingOrganization" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="Buyer" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="255" name="Buyer" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="SourcecreatedDate" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SourceModifiedDate" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="'('SYSTEM')'" key="false" length="25" name="CreatedBy" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="'(getdate())'" key="false" length="23" name="CreatedDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="255" name="ModifiedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="ModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="SourcecreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="SourceModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="19" name="B2BUIDPK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="448">
@@ -696,8 +731,13 @@
         <mapperTableEntries name="RemainingCreditLimit" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="ReportingOrganization" nullable="true" type="id_String"/>
         <mapperTableEntries name="Buyer" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CreatedBy" type="id_String"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries name="ModifiedBy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ModifiedDate" nullable="true" type="id_Date"/>
         <mapperTableEntries name="SourcecreatedDate" nullable="true" type="id_Date"/>
         <mapperTableEntries name="SourceModifiedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="B2BUIDPK" nullable="true" type="id_Long"/>
       </inputTables>
     </nodeData>
   </node>
@@ -714,7 +754,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;NUPCO_Marketplace_DWH&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TjuVH0KOgCtziJM48WRI8sLIvc8cJR3aorI5dyMueJ49dDE480hDdQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OtYSrfIyjJkX6EMZdO3KD2LR6EuJmW6mrbvAHWBWYZ50JLLCFtBotA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;B2B Unit&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -891,28 +931,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/NUPCO/SAPHybris/Current/B2B&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
-    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
-    <elementParameter field="CHECK" name="ERROR" value="false"/>
-    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt&quot;"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
-    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
-    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
-    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBRow_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -927,9 +945,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBCommit_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="FLOW" label="B2B" lineStyle="0" metaname="B2B" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -952,20 +967,12 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
+  </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_4">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="SourceModifiedDate"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="SourcecreatedDate"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBCommit_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
   </connection>
   <connection connectorName="FLOW" label="B2B_DWH" lineStyle="0" metaname="B2B_DWH" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -979,16 +986,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="B2B_DWH"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
-  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -1008,7 +1007,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -1017,18 +1016,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a9864dcb-6dd5-41cc-ab05-4cc57eab072f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fXS/0ofRDT8S5oR6b7UrxQA7rS9QEDv5FIXJloUawRRLGZEgXV7IMOrZcnuSbZSHh1PD/twg1ns9&#13;
-bkZdteHGvQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_316c2870-bb18-4207-831e-fe90ae39a46f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uflYavjt5FIbCh9sTWwo3VHGmw2jR+rktWkpajmeQWgd5jbHvUEPpJ4GiBnAwG0VulE7Ce1OXl7X&#13;
-U1+IxfQRPA==</DigestValue></Reference></SignedInfo><SignatureValue>JgnuzkxcGhqiOtZ/I5hqTq5lFRSTNVhaHEj0TjMlrsjNjRDGev77avQ+qZnuwP61XavLoZFg+vBW&#13;
-tbhYgWIHgPRXUfiPZC7i2mf1ALdF1N08yo+TLEwDXL36hHFDjgWpHZQT+qyYffdP0HE8ncIm57gh&#13;
-bLO600Spj/aV1n+NW6axUSGD8eD2bErOd1o1D4vi6dlVCpanUoIpA5PYxo1CqlrE9MvRFXWKyQKu&#13;
-uEKJm8WIg2rI4yVskL7CVb0Mhiwrq5DuBeI85Ck+xZdE8H0yJlHbhgOfuset7jP+O9FnYR+KKVvu&#13;
-g2tAeQlvORsiXAMc3zZZm+GS6RBDmiCATl9LuA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88ca8cd3-f474-4b29-849e-69e177ab7f9a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OjUBTu0k4Uu+AWV0/hj0s93Ef2CCS5SvfTAYMMGHJ5erfkOnKmh9rhAq7e7zj9nANIusO0mlUS6d&#13;
+m5Lx5/DzcA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0b1a82a0-b816-4215-a798-84d96cb5e28b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YYWfeKSkqnxnlUzaLhdzGC+ADAlVAVf3ql3DXe8sTwdCqbtbFHj/LDuKoySxtlaKNI9hv/Htn0fw&#13;
+klUrrzHjpA==</DigestValue></Reference></SignedInfo><SignatureValue>JSTwGKxqpNgxcer+X7AwZqcWgJ7efPOAMqGf3EVDJm0C9LYPmQ+Sfx+eCVTcE5zJxNE1LsApGLzy&#13;
+dHeWJFYfpeyJYpjh8qiBkfowkHGN3E1t6DDhlElVnAkTROoy/xlTDWUz71lNgTmvGfTTiRX3p7WI&#13;
+E7CCH4+VIQbGW6QT1R4y58IzKXtJ/NpuSxwayLjDDs/WeD0fqmrZIRQ+9cebrRTb1SnkYvn+yjSs&#13;
+xGvblBh5UAdC+dHB3N8/h1XZNZy3M4iFrZAoUfRv85/jb6867LtY2DJciek6hpY2XGSVzzXaagQo&#13;
+F3k2OIHSStn846cp4bjykr1TzaOYf2gWmE63bA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1050,4 +1044,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_316c2870-bb18-4207-831e-fe90ae39a46f" Target="#_a9864dcb-6dd5-41cc-ab05-4cc57eab072f"><Timestamp>2020-12-09 10:50:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0b1a82a0-b816-4215-a798-84d96cb5e28b" Target="#_88ca8cd3-f474-4b29-849e-69e177ab7f9a"><Timestamp>2020-12-21 07:32:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
