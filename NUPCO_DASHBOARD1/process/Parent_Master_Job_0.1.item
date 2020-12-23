@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0a1hgtkk+zNQzAYtupDu4RSeuPxhMOzE4WyYU8vo"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ZY6WlUiOFG7O53B0oIQrYG8jr1ypu0xDlONLTDK+"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fdcvDpaVmI8Do7Wm4v+vu2qp3rnDaqoAw+76dpPWwya0KusbKh1YMw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UAiGeX7L1DbgiXzs46nqLtxGrGzbrZRqx/1LddIjbomc23jlqjsp/Q=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -178,7 +178,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XA+j66sDVXJtuVs/zT5t8rYI5xx9kxXsvhaMnMtD1jXKdBh1z2iWbw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HHjY8VwgZlAilH1YuGata0qYWIQMNkO8RZShR+GjtU5Vce07TE0zAw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -664,7 +664,7 @@
   </node>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_2"/>
-    <elementParameter field="FILE" name="FILE_NAME" value="&quot;E:\NUPCO\SAPHybris\Current\Customer\Customer.txt&quot;"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="&quot;E:/NUPCO/SAPHybris/Current/Customer/*Customer*.txt&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_1" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_1" target="tJava_1">
@@ -903,13 +903,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b7b97ef-3a0d-49cb-975e-930dbed353ec"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OWUZU6iHY/63WLCkerSDofKqIy7CRK3IA312JpUAaNa5DvTle+KQ7T/5g7hqMC+jvfT9og3r9IXX&#13;
-T08Yjc9DpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8bec3c15-ffb8-442f-9b59-5ba26ffff487"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ypG9aqLf1M7zDsYvnfoX4E/kkmou6VcNh8sPweeHGQnOQnrcwVaf6NDZJoo3UCElaFqRaQL96LQ4&#13;
-/tafBb5N/Q==</DigestValue></Reference></SignedInfo><SignatureValue>boXJ49w/H8zVbjUuiZjmT2UPNJJpAVWzK23003tI6P+QSWkeZeykuh7x5YzgwBQEQtaO3LcxVFLT&#13;
-5ULs1m9GtDe7PD+3dumuoxakUQ3fD30tSG/ughBUpY6J53xnz4joBivTHGD3UnYSNruZVbsl2CL4&#13;
-3PzDWTnSC4be0SqUOwNtTiLHCxr4umtUIXeZfhZgEdtdoUVVkAb/jWq97jSubGqIFbaFYYWZ6syN&#13;
-yKd7XEDUtYXhYCyoE5UniwOzTZmqPCKuXYUM0T+YRZ8nkW6aCqWVaWMJeJ3rF6VlbWbIWoFVIZp+&#13;
-nvRluKa+8LFEm8Q08JeHY9Fn2qfkrysgY94iCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f9896647-9901-4602-84d1-c24cf9692813"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ddxK/Nhq48wOOyvBgvUcjUuBlScc1t/0qf0gWuj+op5A0Xk26PY+AA7IRBBXJSVUmkMYdGTafOZq&#13;
++0Wf74MtEw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4672d652-d700-4826-87d2-88eb8b8b7276"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V1Kwc6yMcjGt5ikGiaFfIjNnQjn8Hp3eeX0cCnX+Ywve9LyGo6o2+DPCimXLR/1jnDqPoGLYL73Q&#13;
+EFMFVXSOBg==</DigestValue></Reference></SignedInfo><SignatureValue>d0L+uUJQBVmC9Hq35lrK89jyZvsPtxkxGa9XmiYyk6l1Aaq8fcFuG/ryMDbUn675RhpLbUR8cZ91&#13;
+t7POkZYMdDAQ/d6WpqCifRtqjrpqGaCtuW5fsd/bRY0qIhawhlsC3k/EabfpV0ATzQhjXxy8V/td&#13;
+JeedwoBNqlWQWXicJPujCzzZH4kx4nkjyNXb5M1w10xE/bp5bLu3UbEOCatisaccPiypke7cTsUx&#13;
+ZwBvxRMXs/isAtZkcIDX1z48TBicbHvepO6/w42KmIncdlhm1muZHXdWE1nQbJBJqPzmDvLn/zXW&#13;
+yROw5U4hpETD7P4uk3CCfJXeknxYLry1OQDYhA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -931,4 +931,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8bec3c15-ffb8-442f-9b59-5ba26ffff487" Target="#_5b7b97ef-3a0d-49cb-975e-930dbed353ec"><Timestamp>2020-12-23 14:10:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4672d652-d700-4826-87d2-88eb8b8b7276" Target="#_f9896647-9901-4602-84d1-c24cf9692813"><Timestamp>2020-12-23 14:12:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
