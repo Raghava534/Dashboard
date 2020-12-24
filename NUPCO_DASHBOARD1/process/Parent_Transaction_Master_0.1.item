@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wX1oJqKnIVpkhaaWD+6BamcaFNNQj8+tKM3qTVon"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hbcY6RSEKvaYwOIx3zms9egXEAvmXcm5EifE2jWq"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+tOa4TlNjmylaXxPQQWh2pgwm1UZquS/IgbihEghklfsWvjqkt+1EQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kRip6HYw9og8W5b+WHOC+28sLZzydAIDlqEQcBLF4KWV2XCouM/fIg=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -708,8 +708,9 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileRowCount_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileRowCount_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If9"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_1" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
@@ -718,8 +719,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_1_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileRowCount_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileRowCount_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_2_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If10"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_2" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_2" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
@@ -728,8 +730,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_2_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tFileRowCount_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tFileRowCount_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_3_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If11"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_3" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_3" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
@@ -738,8 +741,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_3_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_4" offsetLabelX="0" offsetLabelY="0" source="tFileList_4" target="tFileRowCount_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_4" offsetLabelX="0" offsetLabelY="0" source="tFileList_4" target="tFileRowCount_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_4_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If12"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_4" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_4" target="tJava_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
@@ -748,8 +752,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_4_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If4"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_5" offsetLabelX="0" offsetLabelY="0" source="tFileList_5" target="tFileRowCount_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_5" offsetLabelX="0" offsetLabelY="0" source="tFileList_5" target="tFileRowCount_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_5_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If13"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_5" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_5" target="tJava_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
@@ -758,8 +763,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_5_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If5"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_6" offsetLabelX="0" offsetLabelY="0" source="tFileList_6" target="tFileRowCount_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_6" offsetLabelX="0" offsetLabelY="0" source="tFileList_6" target="tFileRowCount_6">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_6_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If14"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_6" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_6" target="tJava_6">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
@@ -768,8 +774,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_6_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If6"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_7" offsetLabelX="0" offsetLabelY="0" source="tFileList_7" target="tFileRowCount_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_7" offsetLabelX="0" offsetLabelY="0" source="tFileList_7" target="tFileRowCount_7">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_7_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If15"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_7" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_7" target="tJava_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
@@ -778,8 +785,9 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_7_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If7"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_8" offsetLabelX="0" offsetLabelY="0" source="tFileList_8" target="tFileRowCount_8">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_8" offsetLabelX="0" offsetLabelY="0" source="tFileList_8" target="tFileRowCount_8">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_8_NB_FILE&quot;))&gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If16"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_8" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_8" target="tJava_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
@@ -977,13 +985,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6d04058-5f28-4e3d-adec-6629b5804808"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>efICxiw41PsqOGBEw5P2nxkKD1YIkbe6YkUwffxNVQ+hS+AnPIuryenG26BP6/2uEiWWj9BUpjMJ&#13;
-fhWwUcxBsQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eb756bb4-2d34-4f3b-9381-8f904668c434"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IVgRmcgm3h2TPrvdPZxlKfZJekEqWYKU2VgL3uW29EK0ORwd7NeO3R9anOTRg3seLVjRcnPhBQsg&#13;
-85Idba9XYg==</DigestValue></Reference></SignedInfo><SignatureValue>SIlulaiNwV6+hmBGMx1F9Fez26SvqxA9XzAGXoHPMpiclmYOQsG+pvAolfkshit0WGrhlT/x29gs&#13;
-1gU0xRfIbHhmkwlZi82Sybt7NR8BprkaEDldIy24CAeyuRZ8gFlVirEapbXRI4Kw+dRT9k51t+x2&#13;
-9Qbpr0+IECdg5YGQ3y+al2hv1RYIEwZatW/82Hk6IXjGgvfl7lAH0DWJOHrMhKP1e41wiGRfkaBM&#13;
-Cgth1wgL3DaxNxRQjYltHva/bVqlH0O3yXdoJJ1a0oHBKCyShyJCqNNRa/XD6M2mLe/ml06CmRJ+&#13;
-clmyaLZ5EnMmusKUs2G2WUhNa1kn1tz/lSH03Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_29853b41-c77e-4d93-884e-b20988296d03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AcQnECHE5U8oPHE801Ov/V82mPY+CVXFt7WGrkY98wMwB6NN7ovLdh+Mzycc5wcc/zpQYWaeoBEt&#13;
+bFagZtNe4Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_89102cb6-fc88-44e8-9c21-858e062190d3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AObHn/ILWpv1yrrfP+gkJ3IMKY31f5lb6yrWbzGhTcvIB4LozPbf6Xztv2O8mA9qFiUTlAUWY4sq&#13;
+XOg6klgr3w==</DigestValue></Reference></SignedInfo><SignatureValue>gFNn8oHV4WA1qAJKQpD2qVcuvtyBoefFm7XHCIWdtBX7timjpBktLZu4dXN1/VKaJekd816hPeEI&#13;
+6aVxEUE3YT673r1wq/YKd7gOUC7q1sbgXFVeFTo/rflN89gYdMoqDrxOeHeKg/v5qI26VfwAxco+&#13;
+SWuAHEIoCuosDXZNqF6bZiy1GNsrKzEfnh2HNsn8tuWSljEG/bd/fSUpxgOyQvelZj/JZEtt2pII&#13;
+WQVrSIK7NVA94AfoijOOIaasXmvxQmIgMH3odIDN5rx/zWmwAu6j9XlaNl2wmCKFX3LdFgbdGav2&#13;
+Q2hCYdRwpCJv0htCzj1mnaBtOfiwvyFMth5JQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1005,4 +1013,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eb756bb4-2d34-4f3b-9381-8f904668c434" Target="#_e6d04058-5f28-4e3d-adec-6629b5804808"><Timestamp>2020-12-23 10:36:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_89102cb6-fc88-44e8-9c21-858e062190d3" Target="#_29853b41-c77e-4d93-884e-b20988296d03"><Timestamp>2020-12-24 01:53:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
