@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:g7z2tyakG4vBMs0hGym0oUHCkEGBr2D8UWX5PYkh"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:aP2xdgVo1uIi6JkiNJ7hslMbqNNEkgBFM9LL4hL4"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Hfa/Na1+fLPXyLv0HM3cPgVPHQcRF1YKHMXgdYh5TOkCD4d1m483ZA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JbIJ1UdPzfrYKte2/iqWaW9rRHsFT/yWPXjehzO+qJ74ih0ZfHymow=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -480,80 +480,6 @@
     <metadata connector="FLOW" name="tRunJob_5"/>
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="864">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_6"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/NUPCO/SAPHybris/Current/RFXStatus&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
-    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
-    <elementParameter field="CHECK" name="ERROR" value="false"/>
-    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt&quot;"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
-    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
-    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
-    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="RFXStatus"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="864">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_6"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_6_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="IGNORE_EMPTY_ROW" value="true"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileRowCount_6"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="800" posY="864">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(globalMap.get(&quot;tFileRowCount_6_COUNT&quot;));"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tJava_6">
-      <column comment="" key="false" length="13" name="pk" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="39" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="UID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Active" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="14" name="ConsumedAmount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Allowcashondelivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="12" offsetLabelY="37" posX="992" posY="864">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="RFXStatus"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="NUPCO_DASHBOARD1:_POaWgDu7EeuKROEbotyCqw"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
-    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
-    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
-    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="RFXStatus"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_6"/>
-  </node>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_7"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/NUPCO/SAPHybris/Current/StockLevelStatus&quot;"/>
@@ -577,7 +503,7 @@
     <elementParameter field="TEXT" name="LABEL" value="StockLevel"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1024">
+  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_7"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_7_CURRENT_FILEPATH&quot;))"/>
@@ -588,7 +514,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileRowCount_7"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="800" posY="1024">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="800" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(globalMap.get(&quot;tFileRowCount_7_COUNT&quot;));"/>
@@ -604,7 +530,7 @@
       <column comment="" key="false" length="9" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="12" offsetLabelY="37" posX="992" posY="1024">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="12" offsetLabelY="37" posX="992" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_7"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
@@ -627,7 +553,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_7"/>
   </node>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1184">
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_8"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/NUPCO/SAPHybris/Current/Tickets&quot;"/>
@@ -651,7 +577,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Tickets"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1184">
+  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_8"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_8_CURRENT_FILEPATH&quot;))"/>
@@ -662,7 +588,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileRowCount_8"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="800" posY="1184">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="37" posX="800" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(globalMap.get(&quot;tFileRowCount_8_COUNT&quot;));"/>
@@ -678,7 +604,7 @@
       <column comment="" key="false" length="9" name="amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="12" offsetLabelY="37" posX="992" posY="1184">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="12" offsetLabelY="37" posX="992" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_8"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
@@ -840,17 +766,6 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_5_COUNT&quot;))&gt;1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If5"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_6" offsetLabelX="0" offsetLabelY="0" source="tFileList_6" target="tFileRowCount_6">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_6_NB_FILE&quot;))&gt;0"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If14"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileRowCount_6" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_6" target="tJava_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tRunJob_6">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_6_COUNT&quot;))&gt;1"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If6"/>
-  </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_7" offsetLabelX="0" offsetLabelY="0" source="tFileList_7" target="tFileRowCount_7">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_7_NB_FILE&quot;))&gt;0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If15"/>
@@ -983,26 +898,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_6"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_6"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_7"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -1074,13 +969,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_28b74407-e7e7-4bf4-9698-c52275036fd8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MDKjOg05Zh9TaxFxyGoSYO4eLLmWIt3tf37nrGQ6XJ5L612+9+JxVZN7r2uExu1OEAP3BsgTEewT&#13;
-7uPzjsGfbA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_88b36daa-1183-4980-93be-a76b3776ffed"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7aUR/rXHpsFmaKkwjjzNBTR2GiqOjYpMQeNRyQCjq6rjE6HZLEqvEk127bcYad7Sx0LFtW3vO1zs&#13;
-TPjHjYB79Q==</DigestValue></Reference></SignedInfo><SignatureValue>e6iW0jKbY6IWknGl0HgApmLMB8v1YD21AgK0ap1T/am/om3FnpXhnyIvt4MYk3XLOrrpxQ6sJJdj&#13;
-DRYYbbjWG8bLXlz5KuEdvQIHOpnYLj66mAwfU2f4nBn13qkvDjI/wSSJ0fffdUkJ97gn93Jcgt9v&#13;
-XL5kUirw6+8r+0qdMLjd1mbCX2sjNtjr64h6/E3xBNLj7io4QyPWyGQUUVRCijwmbvfJ4wLBnrtj&#13;
-Z1bXdBxDMrK4I5aRD46K6hidVS3PgVK8RFm0clr6+M12Oxz6/gMjIRc+Erx9Y5U0YKscxoPYLLN0&#13;
-iyhf2wzDJCh+pNa4NlgRAoUDC6sZJDONVBM7Mg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e93c122c-9a21-4eb7-8b7b-e7428859c0b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rzCYNePWxwqB75q4459+JEhK4xyVabbWnfOLaTpsm+QXPPtqxHn1p0eawn/h3CgQ2hvGToS+FsCa&#13;
+DvR23dwbLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b490935f-2f03-4c95-bc26-17abd3a003e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U+Jl/JvGr3ZeCpi31mdGjEpklXZoYtbp47AJQyD+NgvJoZ+LD9JgT2mMANHiMdCk5faa/iBO4Af/&#13;
+qddbcEgLfQ==</DigestValue></Reference></SignedInfo><SignatureValue>VezrRyM7yga5ajA+ZMw33qjVyozEaeoWxb/xB5kQ9OFKPKzKJsjChlZi4tVQq5MfS2dcPQqaYOZR&#13;
+/y1m8wE47hP7FS0FDwFb47E+62/4LS6MO50D5gcvzv06jZL8YAGqSqUd3cZa/liN5q4BMqSW2isZ&#13;
+PxkWoS/PCsRrLLDwHyZ+/2Miu5mUtC1a5tIDgqFNjOoWZ67uWatC1pCDMgURb/XlfF9MacpuDFC0&#13;
+gvLPoDX4qjP8QbVPYfj1bvf5ErXY1CZJpw7CXTDZ+EULmPWc1YY2pdc/fhdcHP6Cvibla8mYEU5d&#13;
+FphNvjwHN/XufWu5Ibby8+1juvAtrLbFKYAmHw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1102,4 +997,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_88b36daa-1183-4980-93be-a76b3776ffed" Target="#_28b74407-e7e7-4bf4-9698-c52275036fd8"><Timestamp>2020-12-24 13:56:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b490935f-2f03-4c95-bc26-17abd3a003e9" Target="#_e93c122c-9a21-4eb7-8b7b-e7428859c0b8"><Timestamp>2020-12-25 09:06:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
