@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:x3vnyXkgdO3f67lMPN8koa7TohA8TGYP2/BTYwcF"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:9QSgLiBe7lZb0BvRhAFOe/Xc2e51AzGeUo2QyGPx"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:r37PQZPPtZAMCnitYW8NOtPlYxusjnhkux96bOH6sWTDKeKlyERibw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uR7RAVUTl/B5T/uO+04aJbzcBF8v6Il5igIuCbi4xG5a1mx7s8nVHQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -109,8 +109,8 @@
     <routinesParameter id="_1ME9gDBrEeuy580y28KB9w" name="TalendStringUtil"/>
     <routinesParameter id="_1L7MijBrEeuy580y28KB9w" name="TalendString"/>
   </parameters>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -122,15 +122,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;nupco_stg&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MarketplaceDashboard_Stg&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;saranya&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hMmjbVlDLuyF/72xlAMWl/ILAA7tczaAe8oOKO5Qo6KNoLyuXbVV7w=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_LuwDgCTXEeuECcsnxqO8zw - Order"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Order&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o0mtTjfctAPSVLRD35Maf+4QaQTi0M7yjiUTkpKgXX1oZ/+XyqGfOQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CustomerVendorReview&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT nupco_stg.\&quot;Order\&quot;.OrderNumber,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.DeliveryCost,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.DeliveryChargeVAT,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.RequestedCustomerDay,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.RequestedSupplierDay,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.OrderStatus,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.TotalPrice,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.\&quot;User\&quot;,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SubTotal,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.B2BUnitID,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.ApproverID,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SupplierID,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.ReleaserID,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.VendorID,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.POBox,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.PostalCode,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.Streetname,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.Town,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.Region,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.Country,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.TransporterName,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.TransportertStatus,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SendBackFlag,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.Datetimecreated,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.CustomerDeliveryDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SupplierDeliveryDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.ActualDeliveryDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.ExpectedDeliveryDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SLADetails,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SupplierSubStatus,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.TransporterSubStatus,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.CustomerPONumber,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SupplierInvoiceNumber,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.TransportInvoiceNumber,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.OperatorSentBackComment,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.OrderRejectionReason,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.POIssuedDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.IsSharedProgram,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.AuditCreatedBy,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.AuditCreatedDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.AuditModifiedBy,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.AuditModifiedDate,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SPRequesterComment,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.SPApproverComment,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.CodeasUpdatedSupplierStatus,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.PayOnAccountPONumber,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.PK,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.sourceModifiedTS,&#10;&#9;&#9;nupco_stg.\&quot;Order\&quot;.B2BUIDPK&#10;FROM&#9;nupco_stg.\&quot;Order\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select * &#10;FROM&#9;nupco_stg.CustomerVendorReview&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -241,7 +239,7 @@
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Order" name="tDBInput_1">
+    <metadata connector="FLOW" label="Order" name="tDBInput_2">
       <column comment="" key="true" length="19" name="OrderNumber" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -657,22 +655,22 @@
       </column>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_338dfe5c-ba1d-40b3-b66b-5e389c349fc3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QPvfvoy6sYoGFmlNQPvpIefSTiE0Fn3jFLvzEpz4PvwDGuY0B+Su6dCoGyL25gMs7Dur1SdWc2kq&#13;
-wZ97x0VnJg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6badd3ae-bc83-4f05-ba59-cd5cc8f358ca"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>C4SrWsLXanfcpAHYVEUGBZWMVUl0fNsBMO2LG585M+WbEKTEcDz1ls8Y6wbGWHyCvBXFRJD7Aqt3&#13;
-WtxJYGCSow==</DigestValue></Reference></SignedInfo><SignatureValue>TBfhbCswTa+bG88z2gn7Q8v5PGouwx3LpPOFMzpOmUt6WsL1w/vHj6zNeZ1OUHjwxXr4jDLQeDHI&#13;
-uZ57oo3jFVqqNpTdoCkJITfTg3631uvJGhCjYV02K4O25hQESjYboBdTiWKNnpas93hUkDDi+Q9J&#13;
-7Kgd+Wi36OGHhSuqgujdhQGjLZRR7koiMX9JMo3bMgmsykdtS12M5piRrwaRi7scPcKglvU5/sSk&#13;
-dD0RhwaVf6S/COVQB5ASgjYgQs+uvvO+3mOKZvMjJHvsPii+iLjVAlDIuuPc4e0MGcUC8u2bEc4W&#13;
-i7V/i9SHZsTb+q0IAEA1fcnSowmi7x5El02urQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e8e635bb-2d40-4f1c-bfa2-b642476de12d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pVxgZY4BypfWQnzVZ0aYlnKZPzzKOpTRQuQHHZ85MlIKpKjcXplxfR/bIAjh40d1OykogtqUverj&#13;
+8p0CdHdifw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f8ca8976-7f3f-4d42-84ca-39f51d76d075"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>l7rRdehLQIGujUpSCZRsCiB0jwh5j/nMdkpW+TX/ZazXkO3LVbqz6ABf5tqharFWuTJw+Jq4+Nhg&#13;
+N/bOb3SIAw==</DigestValue></Reference></SignedInfo><SignatureValue>mGtNvUOL2Asu0iLMaZTEmXbTdP6oTLBDPLjRDA8SHiaFAkeXY9ajEV+HwoZX1BJvbZGF+B/jO8jD&#13;
++Ngzdt9fiETpaukayIaUKEkcy+rcWrWxAk/Ec4ScQyCM2CPaaG5SxJmJp0fR2HRBheQTKRgv+l8C&#13;
+fhIPpBbT9eP2KxsQGx2X02afibIqZFz7B4VTwtyAY9/tGKHq/MhZ7DLQXS9YTfObjpFa+1OJRanH&#13;
+jXOLNtEnAm63SzO/DX5KFfBnaWGwnSAx1/h8dVPgPpBLejS3PUBYkv5RHc32JLjoMKzBg+53BSq4&#13;
+f/YWeH7RULQspvscLecHFAUp7q/OwYmG0JfdMw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -694,4 +692,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6badd3ae-bc83-4f05-ba59-cd5cc8f358ca" Target="#_338dfe5c-ba1d-40b3-b66b-5e389c349fc3"><Timestamp>2021-07-11 12:54:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f8ca8976-7f3f-4d42-84ca-39f51d76d075" Target="#_e8e635bb-2d40-4f1c-bfa2-b642476de12d"><Timestamp>2021-07-11 13:05:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
